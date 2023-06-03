@@ -1,0 +1,47 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Wedding Invitation  Andres and Mey
+X-WR-TIMEZONE:Asia/Jakarta
+X-WR-CALDESC:Pernikahan Andres dan Mey
+BEGIN:VEVENT
+DTSTART:20230610T020000Z
+DTEND:20230610T040000Z
+DTSTAMP:20230603T152309Z
+ORGANIZER;CN=eb5d02fa53eb2f2e69ad33cc26a466b86bacef62d8dcd634fd63c4cf878e44
+ 5b@group.calendar.google.com:mailto:eb5d02fa53eb2f2e69ad33cc26a466b86bacef6
+ 2d8dcd634fd63c4cf878e445b@group.calendar.google.com
+UID:2pmtmvlbdo98jqstn0mbu1bfhl@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dr
+ ez.mcs@gmail.com;X-NUM-GUESTS=0:mailto:drez.mcs@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/ipf-qiow-fup
+CLASS:PUBLIC
+CREATED:20230603T151644Z
+DESCRIPTION:<b>Bismillahirrahmanirrahim</b><br> Kami mengundang Bapak/Ibu/S
+ audara/i ​​untuk hadir di acara pernikahan kami. InsyaAllah akan diadakan d
+ i <br><br>Akad Nikah dan Walimatul 'Ursy : <br>Kediaman mempelai pria  <br>
+ Jl.Pangeran Sutajaya\, Babakan Gebang\, Cirebon <br>Sabtu\, 10 Juni 2023 - 
+ 09:00 WIB. <br><br>Selengkapnya :  <a href="https://weddingandresmey.github
+ .io/invitation/"><u><u>https://weddingandresmey.github.io/invitation/</u></
+ u></a><br><br> Salam\, <br><u>Andres &amp\; Mey</u>\n\n-::~:~::~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin w
+ ith Google Meet: https://meet.google.com/ipf-qiow-fup\n\nLearn more about M
+ eet at: https://support.google.com/a/users/answer/9282720\n\nPlease do not 
+ edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230603T151836Z
+LOCATION:Rocket Chicken Babakan\, 4PFC+WHR\, Babakan\, Cirebon\, West Java 
+ 45191\, Indonesia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Akad Nikah Handres dan Mery
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P0DT0H10M0S
+DESCRIPTION:This is an event reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
