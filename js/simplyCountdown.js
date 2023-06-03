@@ -111,9 +111,9 @@
     exports.simplyCountdown = (elt, args) => {
         const eltProto = Object.getPrototypeOf(elt);
         let parameters = extend({
-            year: 2015,
+            year: 2023,
             month: 6,
-            day: 28,
+            day: 10,
             hours: 9,
             minutes: 0,
             seconds: 0,
