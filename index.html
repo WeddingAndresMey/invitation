@@ -615,22 +615,23 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
+					<form class="whatsapp-form form-inline">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
+								<input class="validate" id="wa_name" name="name" required="" type="text" value="" placeholder="Name">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
+								<label for="Dari" class="sr-only">Email</label>
+								<input class="validate" id="wa_email" name="email" required="" type="email" value="" placeholder="Dari">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+							<button type="submit" class="btn btn-default btn-block"><a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">I am Attending</a></button>
 						</div>
+						  <div id="text-info"></div>
 					</form>
 				</div>
 			</div>
@@ -672,7 +673,7 @@
 <!--<div class="gototop js-top">
 	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 </div>-->
-
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
@@ -946,7 +947,44 @@
 	// Since we are using dynamic mode, we need to programmatically open lightGallery
 	inlineGallery.openGallery();
 </script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).on('click','.send_form', function(){
+var input_blanter = document.getElementById('wa_email');
 
+/* Whatsapp Settings */
+var walink = 'https://web.whatsapp.com/send',
+    phone = '62895616008101',
+    walink2 = 'Saya akan hadir',
+    text_yes = 'Terkirim.',
+    text_no = 'Isi semua Formulir lalu klik Send.';
+
+/* Smartphone Support */
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+var walink = 'whatsapp://send';
+}
+
+if("" != input_blanter.value){
+
+ /* Call Input Form */
+var input_select1 = $("#wa_select :selected").text(),
+    input_name1 = $("#wa_name").val(),
+    input_email1 = $("#wa_email").val();
+
+/* Final Whatsapp URL */
+var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+    '*Name* : ' + input_name1 + '%0A' +
+    '*Dari* : ' + input_email1 + '%0A';
+
+/* Whatsapp Window Open */
+window.open(blanter_whatsapp,'_blank');
+document.getElementById("text-info").innerHTML = '<span class="yes">'+text_yes+'</span>';
+} else {
+document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
+}
+});
+//]]>
+</script>
 </body>
 </html>
 
